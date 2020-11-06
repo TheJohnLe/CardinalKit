@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "tab_dashboard.pdf",
       "idiom" : "universal"
     }
   ],

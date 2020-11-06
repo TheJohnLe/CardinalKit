@@ -11,7 +11,7 @@ import SwiftUI
 struct CardinalKitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StudiesUI()
         }
     }
 }
