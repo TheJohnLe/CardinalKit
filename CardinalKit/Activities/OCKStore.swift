@@ -17,6 +17,11 @@ extension OCKStore {
         let schedule = OCKSchedule.dailyAtTime(hour: 8, minutes: 0, start: Date(), end: nil, text: nil, duration: .allDay, targetValues: [OCKOutcomeValue(30.0, units: "Minutes")
         ])
         
+        // Create breathing task
+        var breathingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.breathingEpisodes.rawValue, title: "Breathe", carePlanUUID: nil, schedule: schedule)
+        breathingTask.instructions = "Repeat 10 times"
+        breathingTask.impactsAdherence = true
+        
         // Create coughing task
         var coughingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.coughingEpisodes.rawValue,
                                    title: "Track coughing",
@@ -36,20 +41,21 @@ extension OCKStore {
                                    title: "Pain",
                                    carePlanUUID: nil, schedule: schedule)
         backPainTask.instructions = "Lower Back"
-        backPainTask.impactsAdherence = true;
+        backPainTask.impactsAdherence = true
         
         // Create walking task
-        var walkingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.walkingEpisodes.rawValue, title: "Walk for 6 minutes", carePlanUUID: nil, schedule: schedule)
-        walkingTask.instructions = "Walk for at least 6 minutes."
+        var walkingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.walkingEpisodes.rawValue, title: "Walk Test", carePlanUUID: nil, schedule: schedule)
+        walkingTask.instructions = "Perform a 6-minute walk"
         walkingTask.impactsAdherence = true
         
         
         // TESTING: Test Task using custom View task
         var testTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.testEpisodes.rawValue, title: "This is a Test Task using custom Views", carePlanUUID: nil, schedule: schedule)
         testTask.instructions = "Test Instructions Would Appear Here"
-        testTask.impactsAdherence = false
+        testTask.impactsAdherence = false;
         
         // Add the static tasks here
+        addTask(breathingTask)
         addTask(coughingTask)
         addTask(stretchingTask)
         addTask(backPainTask)

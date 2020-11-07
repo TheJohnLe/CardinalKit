@@ -13,11 +13,13 @@ import CareKitStore
 final class CareStoreReferenceManager {
     
     enum TaskIdentifiers: String, CaseIterable {
-        case coughingEpisodes
-        case stretchingEpisodes
-        case walkingEpisodes
-        case testEpisodes
         case backPainEpisodes
+        case breathingEpisodes
+        case coughingEpisodes
+        case doxylamineEpisodes
+        case stretchingEpisodes
+        case testEpisodes
+        case walkingEpisodes
     }
     
     static let shared = CareStoreReferenceManager()
