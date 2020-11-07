@@ -104,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343E879E2556295600208284 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				34D99CCA2555DEE20058D9BB /* CardinalKitApp.swift */,
+				34D99D042555E1CE0058D9BB /* StudiesUI.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
 		34D99CBE2555DEE20058D9BB = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				34D99D0D2555E9260058D9BB /* Supporting Files */,
-				34D99CCA2555DEE20058D9BB /* CardinalKitApp.swift */,
-				34D99D042555E1CE0058D9BB /* StudiesUI.swift */,
+				343E879E2556295600208284 /* User Interface */,
 				34D99CFD2555E13C0058D9BB /* Activities */,
 				34D99D162555EBFF0058D9BB /* Insights */,
 				34D99D172555EC070058D9BB /* Learn */,
