@@ -9,7 +9,7 @@ import SwiftUI
 import CareKit
 import CareKitStore
 
-final class ActivityTaskViewController: OCKDailyPageViewController {
+final class ActivityTaskViewController: OCKDailyTasksPageViewController {
     
     override func dailyPageViewController(_ dailyPageViewController: OCKDailyPageViewController, prepare listViewController: OCKListViewController, for date: Date) {
         let identifiers = CareStoreReferenceManager.TaskIdentifiers.allCases.map { $0.rawValue }

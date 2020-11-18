@@ -55,12 +55,11 @@ extension OCKStore {
         testTask.impactsAdherence = false;
         
         // Add the static tasks here
-        addTask(breathingTask)
+        // addTask(breathingTask)
         addTask(coughingTask)
         addTask(stretchingTask)
         addTask(backPainTask)
-        addTask(walkingTask)
+        // addTask(walkingTask)
         addTask(testTask)
-        
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3405EC742565A4BF00B32C96 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3405EC6D2565A4B700B32C96 /* ResearchKit.framework */; };
+		3405EC752565A4BF00B32C96 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3405EC6D2565A4B700B32C96 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		343185292565BA34003DE656 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343185282565BA34003DE656 /* ChartView.swift */; };
 		343E8794255621A400208284 /* WalkingSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E8793255621A400208284 /* WalkingSurveyViewController.swift */; };
 		343E8799255623D800208284 /* WalkingSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E8798255623D800208284 /* WalkingSurveyViewSynchronizer.swift */; };
 		343E879B2556257500208284 /* BreathingSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E879A2556257500208284 /* BreathingSurveyViewController.swift */; };
@@ -29,21 +32,19 @@
 		34D99D1E2555EC8D0058D9BB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99D1D2555EC8D0058D9BB /* ProfileView.swift */; };
 		34D99D232555EEC40058D9BB /* PainSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99D222555EEC40058D9BB /* PainSurveyViewController.swift */; };
 		34D99D252555EF0C0058D9BB /* PainSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99D242555EF0C0058D9BB /* PainSurveyViewSynchronizer.swift */; };
-		34D99D3C2555F4100058D9BB /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D99D392555F3FE0058D9BB /* ResearchKit.framework */; };
-		34D99D3D2555F4100058D9BB /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34D99D392555F3FE0058D9BB /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		34D99D382555F3FE0058D9BB /* PBXContainerItemProxy */ = {
+		3405EC6C2565A4B700B32C96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 34D99D322555F3FD0058D9BB /* ResearchKit.xcodeproj */;
+			containerPortal = 3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		34D99D3A2555F3FE0058D9BB /* PBXContainerItemProxy */ = {
+		3405EC6E2565A4B700B32C96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 34D99D322555F3FD0058D9BB /* ResearchKit.xcodeproj */;
+			containerPortal = 3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
@@ -51,13 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		34D99CF62555E0080058D9BB /* Embed Frameworks */ = {
+		3405EC762565A4BF00B32C96 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				34D99D3D2555F4100058D9BB /* ResearchKit.framework in Embed Frameworks */,
+				3405EC752565A4BF00B32C96 /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +66,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		343185282565BA34003DE656 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		343E8793255621A400208284 /* WalkingSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSurveyViewController.swift; sourceTree = "<group>"; };
 		343E8798255623D800208284 /* WalkingSurveyViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSurveyViewSynchronizer.swift; sourceTree = "<group>"; };
 		343E879A2556257500208284 /* BreathingSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingSurveyViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +91,6 @@
 		34D99D1D2555EC8D0058D9BB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		34D99D222555EEC40058D9BB /* PainSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainSurveyViewController.swift; sourceTree = "<group>"; };
 		34D99D242555EF0C0058D9BB /* PainSurveyViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainSurveyViewSynchronizer.swift; sourceTree = "<group>"; };
-		34D99D322555F3FD0058D9BB /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D99D3C2555F4100058D9BB /* ResearchKit.framework in Frameworks */,
+				3405EC742565A4BF00B32C96 /* ResearchKit.framework in Frameworks */,
 				34D99CE32555DFA30058D9BB /* CareKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3405EC672565A4B700B32C96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3405EC6D2565A4B700B32C96 /* ResearchKit.framework */,
+				3405EC6F2565A4B700B32C96 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		343185242565BA1F003DE656 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				343185282565BA34003DE656 /* ChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		343E879E2556295600208284 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +135,7 @@
 		34D99CBE2555DEE20058D9BB = {
 			isa = PBXGroup;
 			children = (
-				34D99D322555F3FD0058D9BB /* ResearchKit.xcodeproj */,
+				3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */,
 				34D99CC92555DEE20058D9BB /* CardinalKit */,
 				34D99CC82555DEE20058D9BB /* Products */,
 				34D99CF32555E0070058D9BB /* Frameworks */,
@@ -209,6 +228,7 @@
 		34D99D162555EBFF0058D9BB /* Insights */ = {
 			isa = PBXGroup;
 			children = (
+				343185242565BA1F003DE656 /* Views */,
 				34D99D192555EC390058D9BB /* InsightsView.swift */,
 			);
 			path = Insights;
@@ -230,15 +250,6 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		34D99D332555F3FD0058D9BB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				34D99D392555F3FE0058D9BB /* ResearchKit.framework */,
-				34D99D3B2555F3FE0058D9BB /* ResearchKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,7 +260,7 @@
 				34D99CC32555DEE20058D9BB /* Sources */,
 				34D99CC42555DEE20058D9BB /* Frameworks */,
 				34D99CC52555DEE20058D9BB /* Resources */,
-				34D99CF62555E0080058D9BB /* Embed Frameworks */,
+				3405EC762565A4BF00B32C96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,8 +304,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 34D99D332555F3FD0058D9BB /* Products */;
-					ProjectRef = 34D99D322555F3FD0058D9BB /* ResearchKit.xcodeproj */;
+					ProductGroup = 3405EC672565A4B700B32C96 /* Products */;
+					ProjectRef = 3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -305,18 +316,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		34D99D392555F3FE0058D9BB /* ResearchKit.framework */ = {
+		3405EC6D2565A4B700B32C96 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 34D99D382555F3FE0058D9BB /* PBXContainerItemProxy */;
+			remoteRef = 3405EC6C2565A4B700B32C96 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		34D99D3B2555F3FE0058D9BB /* ResearchKitTests.xctest */ = {
+		3405EC6F2565A4B700B32C96 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 34D99D3A2555F3FE0058D9BB /* PBXContainerItemProxy */;
+			remoteRef = 3405EC6E2565A4B700B32C96 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -349,6 +360,7 @@
 				34D99CDE2555DF5A0058D9BB /* CareKitController.swift in Sources */,
 				34D99CFC2555E0F80058D9BB /* ActivityTaskViewController.swift in Sources */,
 				343E879B2556257500208284 /* BreathingSurveyViewController.swift in Sources */,
+				343185292565BA34003DE656 /* ChartView.swift in Sources */,
 				34D99CCB2555DEE20058D9BB /* CardinalKitApp.swift in Sources */,
 				343E879D2556258400208284 /* BreathingSurveyViewSynchronizer.swift in Sources */,
 				34D99D1A2555EC390058D9BB /* InsightsView.swift in Sources */,
