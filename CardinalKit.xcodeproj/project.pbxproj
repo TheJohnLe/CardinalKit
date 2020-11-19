@@ -14,6 +14,8 @@
 		343E8799255623D800208284 /* WalkingSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E8798255623D800208284 /* WalkingSurveyViewSynchronizer.swift */; };
 		343E879B2556257500208284 /* BreathingSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E879A2556257500208284 /* BreathingSurveyViewController.swift */; };
 		343E879D2556258400208284 /* BreathingSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E879C2556258400208284 /* BreathingSurveyViewSynchronizer.swift */; };
+		349BF1BE256600E000C80660 /* InsightsTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349BF1BD256600E000C80660 /* InsightsTaskViewController.swift */; };
+		349BF1C325660CEC00C80660 /* InsightsReferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349BF1C225660CEC00C80660 /* InsightsReferenceManager.swift */; };
 		34D99CCB2555DEE20058D9BB /* CardinalKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99CCA2555DEE20058D9BB /* CardinalKitApp.swift */; };
 		34D99CCF2555DEE50058D9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D99CCE2555DEE50058D9BB /* Assets.xcassets */; };
 		34D99CD22555DEE50058D9BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D99CD12555DEE50058D9BB /* Preview Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		343E8798255623D800208284 /* WalkingSurveyViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSurveyViewSynchronizer.swift; sourceTree = "<group>"; };
 		343E879A2556257500208284 /* BreathingSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingSurveyViewController.swift; sourceTree = "<group>"; };
 		343E879C2556258400208284 /* BreathingSurveyViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingSurveyViewSynchronizer.swift; sourceTree = "<group>"; };
+		349BF1BD256600E000C80660 /* InsightsTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsTaskViewController.swift; sourceTree = "<group>"; };
+		349BF1C225660CEC00C80660 /* InsightsReferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsReferenceManager.swift; sourceTree = "<group>"; };
 		34D99CC72555DEE20058D9BB /* CardinalKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardinalKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D99CCA2555DEE20058D9BB /* CardinalKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalKitApp.swift; sourceTree = "<group>"; };
 		34D99CCE2555DEE50058D9BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 			children = (
 				343185242565BA1F003DE656 /* Views */,
 				34D99D192555EC390058D9BB /* InsightsView.swift */,
+				349BF1BD256600E000C80660 /* InsightsTaskViewController.swift */,
+				349BF1C225660CEC00C80660 /* InsightsReferenceManager.swift */,
 			);
 			path = Insights;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 				34D99D052555E1CE0058D9BB /* StudiesUI.swift in Sources */,
 				34D99CFA2555E0BA0058D9BB /* CareStoreReferenceManager.swift in Sources */,
 				34D99CDE2555DF5A0058D9BB /* CareKitController.swift in Sources */,
+				349BF1BE256600E000C80660 /* InsightsTaskViewController.swift in Sources */,
 				34D99CFC2555E0F80058D9BB /* ActivityTaskViewController.swift in Sources */,
 				343E879B2556257500208284 /* BreathingSurveyViewController.swift in Sources */,
 				343185292565BA34003DE656 /* ChartView.swift in Sources */,
@@ -365,6 +372,7 @@
 				343E879D2556258400208284 /* BreathingSurveyViewSynchronizer.swift in Sources */,
 				34D99D1A2555EC390058D9BB /* InsightsView.swift in Sources */,
 				34D99D1C2555EC770058D9BB /* LearnView.swift in Sources */,
+				349BF1C325660CEC00C80660 /* InsightsReferenceManager.swift in Sources */,
 				343E8794255621A400208284 /* WalkingSurveyViewController.swift in Sources */,
 				34D99D1E2555EC8D0058D9BB /* ProfileView.swift in Sources */,
 				34D99D252555EF0C0058D9BB /* PainSurveyViewSynchronizer.swift in Sources */,

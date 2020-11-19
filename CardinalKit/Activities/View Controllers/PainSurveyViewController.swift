@@ -45,7 +45,9 @@ class PainSurveyViewController: OCKInstructionsTaskViewController, ORKTaskViewCo
         let survey = taskViewController.result.results!.first(where: { $0.identifier == "pain" }) as! ORKStepResult
         let painResult = survey.results!.first as! ORKScaleQuestionResult
         let answer = Int(truncating: painResult.scaleAnswer!)
-
+        
+        
+        
         // 4b. Save the result into CareKit's store
         controller.appendOutcomeValue(value: answer, at: IndexPath(item: 0, section: 0), completion: nil)
     }

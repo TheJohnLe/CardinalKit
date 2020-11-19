@@ -24,14 +24,6 @@ final class CareStoreReferenceManager {
     
     static let shared = CareStoreReferenceManager()
     
-    // Manage syncronization of a CoreData store
-    lazy var synchronizedStoreManager: OCKSynchronizedStoreManager = {
-        let store = OCKStore(name: "SFSU Sample Tracker")
-        store.populateDailyTasks()
-        let manager = OCKSynchronizedStoreManager(wrapping: store)
-        return manager
-    }()
-    
     private init() {}
     
 }
