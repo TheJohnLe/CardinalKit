@@ -18,9 +18,9 @@ extension OCKStore {
         ])
         
         // Create breathing task
-        var breathingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.breathingEpisodes.rawValue, title: "Breathe", carePlanUUID: nil, schedule: schedule)
-        breathingTask.instructions = "Repeat 10 times"
-        breathingTask.impactsAdherence = true
+//        var breathingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.breathingEpisodes.rawValue, title: "Breathe", carePlanUUID: nil, schedule: schedule)
+//        breathingTask.instructions = "Repeat 10 times"
+//        breathingTask.impactsAdherence = true
         
         // Create coughing task
         var coughingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.coughingEpisodes.rawValue,
@@ -44,9 +44,9 @@ extension OCKStore {
         backPainTask.impactsAdherence = true
         
         // Create walking task
-        var walkingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.walkingEpisodes.rawValue, title: "Walk Test", carePlanUUID: nil, schedule: schedule)
-        walkingTask.instructions = "Perform a 6-minute walk"
-        walkingTask.impactsAdherence = true
+//        var walkingTask = OCKTask(id: CareStoreReferenceManager.TaskIdentifiers.walkingEpisodes.rawValue, title: "Walk Test", carePlanUUID: nil, schedule: schedule)
+//        walkingTask.instructions = "Perform a 6-minute walk"
+//        walkingTask.impactsAdherence = true
         
         
         // TESTING: Test Task using custom View task
@@ -55,11 +55,11 @@ extension OCKStore {
         testTask.impactsAdherence = false;
         
         // Add the static tasks here
-        // addTask(breathingTask)
+        //addTask(breathingTask)
         addTask(coughingTask)
         addTask(stretchingTask)
         addTask(backPainTask)
-        // addTask(walkingTask)
+        //addTask(walkingTask)
         addTask(testTask)
     }
 }

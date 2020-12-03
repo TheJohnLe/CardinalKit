@@ -1,19 +1,19 @@
 //
-//  CareKitController.swift
+//  InsightsController.swift
 //  CardinalKit
 //
-//  Created by John Le on 11/6/20.
+//  Created by John Le on 11/20/20.
 //
 
 import SwiftUI
 import CareKit
 import CareKitStore
 
-struct CareKitController: UIViewControllerRepresentable {
+struct InsightsController: UIViewControllerRepresentable {
     
     func makeUIViewController(context: Context) -> UIViewController {
         // Call the entire Task View Controller and connect to the created store manager
-        let picker = ActivityTaskViewController(storeManager: CareStoreReferenceManager.synchronizedStoreManager)
+        let picker = InsightsViewController(storeManager: CareStoreReferenceManager.synchronizedStoreManager)
         return picker
     }
     

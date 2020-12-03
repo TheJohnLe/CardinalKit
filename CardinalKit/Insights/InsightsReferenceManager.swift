@@ -5,7 +5,7 @@
 //  Created by John Le on 11/18/20.
 //
 
-import Foundation
+import SwiftUI
 
 final class InsightsReferenceManager {
     enum TaskIdentifiers: String, CaseIterable {
@@ -18,5 +18,7 @@ final class InsightsReferenceManager {
         case walkingEpisodes
     }
     
-    static let sharedInsights = InsightsReferenceManager()
+    static let sharedInsightsManager = InsightsReferenceManager()
+    
+    var testData: [CGFloat] = [4,3,2,0,6,1,2]
 }

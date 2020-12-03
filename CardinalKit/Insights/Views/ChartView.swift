@@ -16,8 +16,6 @@ struct ChartView: UIViewRepresentable {
     func makeUIView(context: Context) -> OCKCartesianChartView {
         let chartView = OCKCartesianChartView(type: .bar)
         
-        chartView.headerView.titleLabel.text = "Coughing"
-        
         chartView.graphView.dataSeries = [
             OCKDataSeries(values: data, title: "Coughing")
         ]

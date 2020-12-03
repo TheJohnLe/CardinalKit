@@ -10,12 +10,14 @@
 		3405EC742565A4BF00B32C96 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3405EC6D2565A4B700B32C96 /* ResearchKit.framework */; };
 		3405EC752565A4BF00B32C96 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3405EC6D2565A4B700B32C96 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		343185292565BA34003DE656 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343185282565BA34003DE656 /* ChartView.swift */; };
+		343D8A8F25670B410012246F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D8A8E25670B410012246F /* Colors.swift */; };
+		343D8A9725670CA40012246F /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D8A9625670CA40012246F /* InsightsViewController.swift */; };
 		343E8794255621A400208284 /* WalkingSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E8793255621A400208284 /* WalkingSurveyViewController.swift */; };
 		343E8799255623D800208284 /* WalkingSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E8798255623D800208284 /* WalkingSurveyViewSynchronizer.swift */; };
 		343E879B2556257500208284 /* BreathingSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E879A2556257500208284 /* BreathingSurveyViewController.swift */; };
 		343E879D2556258400208284 /* BreathingSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E879C2556258400208284 /* BreathingSurveyViewSynchronizer.swift */; };
-		349BF1BE256600E000C80660 /* InsightsTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349BF1BD256600E000C80660 /* InsightsTaskViewController.swift */; };
-		349BF1C325660CEC00C80660 /* InsightsReferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349BF1C225660CEC00C80660 /* InsightsReferenceManager.swift */; };
+		344FB1542568472400CCB310 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344FB1532568472400CCB310 /* HealthKit.framework */; };
+		344FB15C2568496F00CCB310 /* InsightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FB15B2568496F00CCB310 /* InsightsController.swift */; };
 		34D99CCB2555DEE20058D9BB /* CardinalKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99CCA2555DEE20058D9BB /* CardinalKitApp.swift */; };
 		34D99CCF2555DEE50058D9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D99CCE2555DEE50058D9BB /* Assets.xcassets */; };
 		34D99CD22555DEE50058D9BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D99CD12555DEE50058D9BB /* Preview Assets.xcassets */; };
@@ -70,12 +72,15 @@
 /* Begin PBXFileReference section */
 		3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		343185282565BA34003DE656 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		343D8A8E25670B410012246F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		343D8A9625670CA40012246F /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
 		343E8793255621A400208284 /* WalkingSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSurveyViewController.swift; sourceTree = "<group>"; };
 		343E8798255623D800208284 /* WalkingSurveyViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingSurveyViewSynchronizer.swift; sourceTree = "<group>"; };
 		343E879A2556257500208284 /* BreathingSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingSurveyViewController.swift; sourceTree = "<group>"; };
 		343E879C2556258400208284 /* BreathingSurveyViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingSurveyViewSynchronizer.swift; sourceTree = "<group>"; };
-		349BF1BD256600E000C80660 /* InsightsTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsTaskViewController.swift; sourceTree = "<group>"; };
-		349BF1C225660CEC00C80660 /* InsightsReferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsReferenceManager.swift; sourceTree = "<group>"; };
+		344FB1522568472400CCB310 /* CardinalKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CardinalKit.entitlements; sourceTree = "<group>"; };
+		344FB1532568472400CCB310 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		344FB15B2568496F00CCB310 /* InsightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsController.swift; sourceTree = "<group>"; };
 		34D99CC72555DEE20058D9BB /* CardinalKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardinalKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D99CCA2555DEE20058D9BB /* CardinalKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalKitApp.swift; sourceTree = "<group>"; };
 		34D99CCE2555DEE50058D9BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344FB1542568472400CCB310 /* HealthKit.framework in Frameworks */,
 				3405EC742565A4BF00B32C96 /* ResearchKit.framework in Frameworks */,
 				34D99CE32555DFA30058D9BB /* CareKit in Frameworks */,
 			);
@@ -157,6 +163,7 @@
 		34D99CC92555DEE20058D9BB /* CardinalKit */ = {
 			isa = PBXGroup;
 			children = (
+				344FB1522568472400CCB310 /* CardinalKit.entitlements */,
 				34D99D0D2555E9260058D9BB /* Supporting Files */,
 				343E879E2556295600208284 /* User Interface */,
 				34D99CFD2555E13C0058D9BB /* Activities */,
@@ -179,6 +186,7 @@
 		34D99CF32555E0070058D9BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				344FB1532568472400CCB310 /* HealthKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 				34D99D092555E4280058D9BB /* CKConfiguration.plist */,
 				34D99D0B2555E9010058D9BB /* CKPropertyReader.swift */,
 				34D99D0E2555E9570058D9BB /* Constants.swift */,
+				343D8A8E25670B410012246F /* Colors.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,9 +242,9 @@
 			isa = PBXGroup;
 			children = (
 				343185242565BA1F003DE656 /* Views */,
+				344FB15B2568496F00CCB310 /* InsightsController.swift */,
 				34D99D192555EC390058D9BB /* InsightsView.swift */,
-				349BF1BD256600E000C80660 /* InsightsTaskViewController.swift */,
-				349BF1C225660CEC00C80660 /* InsightsReferenceManager.swift */,
+				343D8A9625670CA40012246F /* InsightsViewController.swift */,
 			);
 			path = Insights;
 			sourceTree = "<group>";
@@ -356,15 +365,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344FB15C2568496F00CCB310 /* InsightsController.swift in Sources */,
 				34D99D232555EEC40058D9BB /* PainSurveyViewController.swift in Sources */,
+				343D8A8F25670B410012246F /* Colors.swift in Sources */,
 				34D99CF82555E08C0058D9BB /* OCKStore.swift in Sources */,
 				343E8799255623D800208284 /* WalkingSurveyViewSynchronizer.swift in Sources */,
 				34D99D0F2555E9570058D9BB /* Constants.swift in Sources */,
 				34D99CDB2555DF1A0058D9BB /* ActivitiesView.swift in Sources */,
 				34D99D052555E1CE0058D9BB /* StudiesUI.swift in Sources */,
 				34D99CFA2555E0BA0058D9BB /* CareStoreReferenceManager.swift in Sources */,
+				343D8A9725670CA40012246F /* InsightsViewController.swift in Sources */,
 				34D99CDE2555DF5A0058D9BB /* CareKitController.swift in Sources */,
-				349BF1BE256600E000C80660 /* InsightsTaskViewController.swift in Sources */,
 				34D99CFC2555E0F80058D9BB /* ActivityTaskViewController.swift in Sources */,
 				343E879B2556257500208284 /* BreathingSurveyViewController.swift in Sources */,
 				343185292565BA34003DE656 /* ChartView.swift in Sources */,
@@ -372,7 +383,6 @@
 				343E879D2556258400208284 /* BreathingSurveyViewSynchronizer.swift in Sources */,
 				34D99D1A2555EC390058D9BB /* InsightsView.swift in Sources */,
 				34D99D1C2555EC770058D9BB /* LearnView.swift in Sources */,
-				349BF1C325660CEC00C80660 /* InsightsReferenceManager.swift in Sources */,
 				343E8794255621A400208284 /* WalkingSurveyViewController.swift in Sources */,
 				34D99D1E2555EC8D0058D9BB /* ProfileView.swift in Sources */,
 				34D99D252555EF0C0058D9BB /* PainSurveyViewSynchronizer.swift in Sources */,
@@ -504,6 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CardinalKit/CardinalKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CardinalKit/Preview Content\"";
 				DEVELOPMENT_TEAM = F75X5R3D9A;
@@ -526,6 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CardinalKit/CardinalKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CardinalKit/Preview Content\"";
 				DEVELOPMENT_TEAM = F75X5R3D9A;
