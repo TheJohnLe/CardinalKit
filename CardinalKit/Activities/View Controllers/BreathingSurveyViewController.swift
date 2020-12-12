@@ -39,12 +39,17 @@ class BreathingSurveyViewController: OCKInstructionsTaskViewController, ORKTaskV
             return
         }
 
-        // 4a. Retrieve the result from the ResearchKit survey
-        let survey = taskViewController.result.results!.first(where: { $0.identifier == "breathe" }) as! ORKStepResult
-        let painResult = survey.results!.first as! ORKScaleQuestionResult
-        let answer = Int(truncating: painResult.scaleAnswer!)
+        // 4a. Retrieve the result from the ResearchKit tapping
+        // TODO: Make sure to get results from the specified identifiers "tapping.left", and "tapping.right"
+        
+        let leftSurvey = taskViewController.result.results!.first(where: {$0.identifier == "tapping.left"})!
+        print("Left Survey Results", leftSurvey)
+        let rightSurvey = taskViewController.result.results!.first(where: {$0.identifier == "tapping.right"})!
+        print("Right Survey Results", rightSurvey)
+        let testLength = rightSurvey.value(forKey: "samples")
+        print("What is this", testLength)
 
         // 4b. Save the result into CareKit's store
-        controller.appendOutcomeValue(value: answer, at: IndexPath(item: 0, section: 0), completion: nil)
+
     }
 }

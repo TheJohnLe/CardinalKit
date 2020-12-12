@@ -27,9 +27,9 @@ final class ActivityTaskViewController: OCKDailyTasksPageViewController {
                  */
                 switch task.id {
                 // setup breathing card
-//                case CareStoreReferenceManager.TaskIdentifiers.breathingEpisodes.rawValue:
-//                    let breathingCard = BreathingSurveyViewController(viewSynchronizer: BreathingSurveyViewSynchronizer(), task: task, eventQuery: OCKEventQuery(for: Date()), storeManager: self.storeManager)
-//                    listViewController.appendViewController(breathingCard, animated: false)
+                case CareStoreReferenceManager.TaskIdentifiers.breathingEpisodes.rawValue:
+                    let breathingCard = BreathingSurveyViewController(viewSynchronizer: BreathingSurveyViewSynchronizer(), task: task, eventQuery: OCKEventQuery(for: Date()), storeManager: self.storeManager)
+                    listViewController.appendViewController(breathingCard, animated: false)
                 // setup coughing card
                 case CareStoreReferenceManager.TaskIdentifiers.coughingEpisodes.rawValue:
                     let coughingCard = OCKButtonLogTaskViewController(task: task,
@@ -40,9 +40,9 @@ final class ActivityTaskViewController: OCKDailyTasksPageViewController {
                     let stretchingCard = OCKSimpleTaskViewController(task: task, eventQuery: .init(for: date), storeManager: self.storeManager);
                     listViewController.appendViewController(stretchingCard, animated: false)
                 // setup walking card
-//                case CareStoreReferenceManager.TaskIdentifiers.walkingEpisodes.rawValue:
-//                    let walkingCard = WalkingSurveyViewController(viewSynchronizer: WalkingSurveyViewSynchronizer(), task: task, eventQuery: OCKEventQuery(for: Date()), storeManager: self.storeManager)
-//                    listViewController.appendViewController(walkingCard, animated: false)
+                case CareStoreReferenceManager.TaskIdentifiers.walkingEpisodes.rawValue:
+                    let walkingCard = WalkingSurveyViewController(viewSynchronizer: WalkingSurveyViewSynchronizer(), task: task, eventQuery: OCKEventQuery(for: Date()), storeManager: self.storeManager)
+                    listViewController.appendViewController(walkingCard, animated: false)
                 // setup test card
                 case CareStoreReferenceManager.TaskIdentifiers.testEpisodes.rawValue:
                     let testCard = OCKInstructionsTaskViewController(task: task, eventQuery: .init(for: date), storeManager: self.storeManager)

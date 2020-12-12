@@ -125,6 +125,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		340E0EB8257997BF0066506B /* Local Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Local Database";
+			sourceTree = "<group>";
+		};
 		343185242565BA1F003DE656 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +173,7 @@
 				344FB1522568472400CCB310 /* CardinalKit.entitlements */,
 				34D99D0D2555E9260058D9BB /* Supporting Files */,
 				343E879E2556295600208284 /* User Interface */,
+				340E0EB8257997BF0066506B /* Local Database */,
 				34D99CFD2555E13C0058D9BB /* Activities */,
 				34D99D162555EBFF0058D9BB /* Insights */,
 				34D99D172555EC070058D9BB /* Learn */,

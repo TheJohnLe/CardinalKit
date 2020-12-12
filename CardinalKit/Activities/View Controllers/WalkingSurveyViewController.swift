@@ -21,14 +21,18 @@ class WalkingSurveyViewController: OCKInstructionsTaskViewController, ORKTaskVie
             return
         }
         
+        // TODO: Figure out correct way to call fitnessCheck to retrieve value
+        
         // 2b. If the user attempted to mark the task complete, display a ResearchKit survey.
         let intendedUseDescription = "Tests ability to walk"
-        let walkingTask = ORKOrderedTask.fitnessCheck(withIdentifier: "walkingTask", intendedUseDescription: intendedUseDescription, walkDuration: 20, restDuration: 30, options: ORKPredefinedTaskOption())
-        let surveyViewController = ORKTaskViewController(task: walkingTask, taskRun: nil)
-        surveyViewController.delegate = self
+        let walkingTask = ORKOrderedTask.fitnessCheck(withIdentifier: "walking", intendedUseDescription: intendedUseDescription, walkDuration: 20, restDuration: 10, options: ORKPredefinedTaskOption())
+        let walkingViewController = ORKTaskViewController(task: walkingTask, taskRun: nil)
+        // BUG: crashes the walking activity
+        // commenting this performs activity but does not achieve result
+        walkingViewController.delegate = self
 
         // 3a. Present the survey to the user
-        present(surveyViewController, animated: true, completion: nil)
+        present(walkingViewController, animated: true, completion: nil)
     }
 
     // 3b. This method will be called when the user completes the survey.
@@ -39,12 +43,16 @@ class WalkingSurveyViewController: OCKInstructionsTaskViewController, ORKTaskVie
             return
         }
 
-        // 4a. Retrieve the result from the ResearchKit survey
-        let survey = taskViewController.result.results!.first(where: { $0.identifier == "walking" }) as! ORKStepResult
-        let painResult = survey.results!.first as! ORKScaleQuestionResult
-        let answer = Int(truncating: painResult.scaleAnswer!)
-
+        let survey = taskViewController.result
+        print("Survey Results", survey)
+//        // 4a. Retrieve the result from the ResearchKit survey
+//        let survey = taskViewController.result.results!.first(where: { $0.identifier == "walking" }) as! ORKStepResult
+//        let walkingResult = survey.results!.first!
+//        //let answer = Int(truncating: walkingResult.scaleAnswer!)
+//
+//        print(walkingResult)
+        
         // 4b. Save the result into CareKit's store
-        controller.appendOutcomeValue(value: answer, at: IndexPath(item: 0, section: 0), completion: nil)
+//        controller.appendOutcomeValue(value: answer, at: IndexPath(item: 0, section: 0), completion: nil)
     }
 }
