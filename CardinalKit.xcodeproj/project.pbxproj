@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3405EC742565A4BF00B32C96 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3405EC6D2565A4B700B32C96 /* ResearchKit.framework */; };
-		3405EC752565A4BF00B32C96 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3405EC6D2565A4B700B32C96 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		343185292565BA34003DE656 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343185282565BA34003DE656 /* ChartView.swift */; };
 		343D8A8F25670B410012246F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D8A8E25670B410012246F /* Colors.swift */; };
 		343D8A9725670CA40012246F /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D8A9625670CA40012246F /* InsightsViewController.swift */; };
@@ -16,14 +14,15 @@
 		343E8799255623D800208284 /* WalkingSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E8798255623D800208284 /* WalkingSurveyViewSynchronizer.swift */; };
 		343E879B2556257500208284 /* BreathingSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E879A2556257500208284 /* BreathingSurveyViewController.swift */; };
 		343E879D2556258400208284 /* BreathingSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E879C2556258400208284 /* BreathingSurveyViewSynchronizer.swift */; };
-		344FB1542568472400CCB310 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344FB1532568472400CCB310 /* HealthKit.framework */; };
 		344FB15C2568496F00CCB310 /* InsightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FB15B2568496F00CCB310 /* InsightsController.swift */; };
+		345C10B025856E83005395FC /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345C10AC25856E6B005395FC /* ResearchKit.framework */; };
+		345C10B125856E83005395FC /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 345C10AC25856E6B005395FC /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		345C10B525856EA7005395FC /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 345C10B425856EA7005395FC /* CareKit */; };
 		34D99CCB2555DEE20058D9BB /* CardinalKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99CCA2555DEE20058D9BB /* CardinalKitApp.swift */; };
 		34D99CCF2555DEE50058D9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D99CCE2555DEE50058D9BB /* Assets.xcassets */; };
 		34D99CD22555DEE50058D9BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D99CD12555DEE50058D9BB /* Preview Assets.xcassets */; };
 		34D99CDB2555DF1A0058D9BB /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99CDA2555DF1A0058D9BB /* ActivitiesView.swift */; };
 		34D99CDE2555DF5A0058D9BB /* CareKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99CDD2555DF5A0058D9BB /* CareKitController.swift */; };
-		34D99CE32555DFA30058D9BB /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 34D99CE22555DFA30058D9BB /* CareKit */; };
 		34D99CF82555E08C0058D9BB /* OCKStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99CF72555E08C0058D9BB /* OCKStore.swift */; };
 		34D99CFA2555E0BA0058D9BB /* CareStoreReferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99CF92555E0BA0058D9BB /* CareStoreReferenceManager.swift */; };
 		34D99CFC2555E0F80058D9BB /* ActivityTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D99CFB2555E0F80058D9BB /* ActivityTaskViewController.swift */; };
@@ -39,16 +38,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3405EC6C2565A4B700B32C96 /* PBXContainerItemProxy */ = {
+		345C10AB25856E6B005395FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */;
+			containerPortal = 345C10A525856E6A005395FC /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		3405EC6E2565A4B700B32C96 /* PBXContainerItemProxy */ = {
+		345C10AD25856E6B005395FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */;
+			containerPortal = 345C10A525856E6A005395FC /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
@@ -56,13 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3405EC762565A4BF00B32C96 /* Embed Frameworks */ = {
+		345C10B225856E83005395FC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3405EC752565A4BF00B32C96 /* ResearchKit.framework in Embed Frameworks */,
+				345C10B125856E83005395FC /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,7 +69,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		343185282565BA34003DE656 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		343D8A8E25670B410012246F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		343D8A9625670CA40012246F /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +79,7 @@
 		344FB1522568472400CCB310 /* CardinalKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CardinalKit.entitlements; sourceTree = "<group>"; };
 		344FB1532568472400CCB310 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		344FB15B2568496F00CCB310 /* InsightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsController.swift; sourceTree = "<group>"; };
+		345C10A525856E6A005395FC /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		34D99CC72555DEE20058D9BB /* CardinalKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardinalKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D99CCA2555DEE20058D9BB /* CardinalKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalKitApp.swift; sourceTree = "<group>"; };
 		34D99CCE2555DEE50058D9BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,24 +106,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				344FB1542568472400CCB310 /* HealthKit.framework in Frameworks */,
-				3405EC742565A4BF00B32C96 /* ResearchKit.framework in Frameworks */,
-				34D99CE32555DFA30058D9BB /* CareKit in Frameworks */,
+				345C10B525856EA7005395FC /* CareKit in Frameworks */,
+				345C10B025856E83005395FC /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3405EC672565A4B700B32C96 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3405EC6D2565A4B700B32C96 /* ResearchKit.framework */,
-				3405EC6F2565A4B700B32C96 /* ResearchKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		340E0EB8257997BF0066506B /* Local Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,10 +138,19 @@
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
+		345C10A625856E6A005395FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				345C10AC25856E6B005395FC /* ResearchKit.framework */,
+				345C10AE25856E6B005395FC /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		34D99CBE2555DEE20058D9BB = {
 			isa = PBXGroup;
 			children = (
-				3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */,
+				345C10A525856E6A005395FC /* ResearchKit.xcodeproj */,
 				34D99CC92555DEE20058D9BB /* CardinalKit */,
 				34D99CC82555DEE20058D9BB /* Products */,
 				34D99CF32555E0070058D9BB /* Frameworks */,
@@ -283,7 +281,7 @@
 				34D99CC32555DEE20058D9BB /* Sources */,
 				34D99CC42555DEE20058D9BB /* Frameworks */,
 				34D99CC52555DEE20058D9BB /* Resources */,
-				3405EC762565A4BF00B32C96 /* Embed Frameworks */,
+				345C10B225856E83005395FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,7 +289,7 @@
 			);
 			name = CardinalKit;
 			packageProductDependencies = (
-				34D99CE22555DFA30058D9BB /* CareKit */,
+				345C10B425856EA7005395FC /* CareKit */,
 			);
 			productName = CardinalKit;
 			productReference = 34D99CC72555DEE20058D9BB /* CardinalKit.app */;
@@ -321,14 +319,14 @@
 			);
 			mainGroup = 34D99CBE2555DEE20058D9BB;
 			packageReferences = (
-				34D99CE12555DFA30058D9BB /* XCRemoteSwiftPackageReference "CareKit" */,
+				345C10B325856EA7005395FC /* XCRemoteSwiftPackageReference "CareKit" */,
 			);
 			productRefGroup = 34D99CC82555DEE20058D9BB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3405EC672565A4B700B32C96 /* Products */;
-					ProjectRef = 3405EC662565A4B700B32C96 /* ResearchKit.xcodeproj */;
+					ProductGroup = 345C10A625856E6A005395FC /* Products */;
+					ProjectRef = 345C10A525856E6A005395FC /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -339,18 +337,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3405EC6D2565A4B700B32C96 /* ResearchKit.framework */ = {
+		345C10AC25856E6B005395FC /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 3405EC6C2565A4B700B32C96 /* PBXContainerItemProxy */;
+			remoteRef = 345C10AB25856E6B005395FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3405EC6F2565A4B700B32C96 /* ResearchKitTests.xctest */ = {
+		345C10AE25856E6B005395FC /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 3405EC6E2565A4B700B32C96 /* PBXContainerItemProxy */;
+			remoteRef = 345C10AD25856E6B005395FC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -587,20 +585,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		34D99CE12555DFA30058D9BB /* XCRemoteSwiftPackageReference "CareKit" */ = {
+		345C10B325856EA7005395FC /* XCRemoteSwiftPackageReference "CareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
 			requirement = {
-				branch = master;
+				branch = main;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		34D99CE22555DFA30058D9BB /* CareKit */ = {
+		345C10B425856EA7005395FC /* CareKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 34D99CE12555DFA30058D9BB /* XCRemoteSwiftPackageReference "CareKit" */;
+			package = 345C10B325856EA7005395FC /* XCRemoteSwiftPackageReference "CareKit" */;
 			productName = CareKit;
 		};
 /* End XCSwiftPackageProductDependency section */
